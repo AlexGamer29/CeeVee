@@ -1,0 +1,53 @@
+.cv__container {
+    width: 100%;
+    height: 102.5px;
+}
+
+.cv__header__container {
+    width: 100%;
+    height: 500px;
+    background: url('../../assests/img/cv-header-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cv__header__title {
+    margin-bottom: -200px;
+}
+
+.cv__header__para {
+    width: 50%;
+    margin: 100px;
+}
+
+.cv__features__container {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__cards__container {
+    width: 90%;
+    height: 900px;
+    background-color: rgba(233, 251, 248, 1);
+    border-radius: 40px;
+    z-index: 1;
+    margin-top: -70px;
+}
+
+.text__container {
+    width: 100%;
+}
+
+.card__title {
+    max-width: 50%;
+}
+
+.card__para {
+    max-width: 50%;
+}
