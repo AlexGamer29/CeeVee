@@ -16,12 +16,15 @@ const CV = () => {
             </div>
             <div className="cv__features__container">
                 <div className="features__cards__container">
-                    <div className="text__container">
+                    <div id="text__container">
                         <h1 className='card__title'>We have different guides for different majors</h1>
                         <p className="card__para">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                             tempor invidunt ut labore et.
                         </p>
+                    </div>
+                    <div className="cards__container">
+                        
                     </div>
                 </div>
             </div>

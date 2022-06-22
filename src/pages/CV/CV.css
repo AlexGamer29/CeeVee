@@ -40,14 +40,23 @@
     margin-top: -70px;
 }
 
-.text__container {
+#text__container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding-top: 100px;
+    line-height: 1.5;
 }
 
 .card__title {
-    max-width: 50%;
 }
 
 .card__para {
-    max-width: 50%;
+    width: 55%;
+    text-align: center;
+}
+
+.cards__container {
 }
