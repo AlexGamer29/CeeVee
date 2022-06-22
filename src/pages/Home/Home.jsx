@@ -10,9 +10,6 @@ import { FooterContainer } from '../../components/FooterContainer/FooterContaine
 const Home = () => {
   return (
     <>
-      <div className='home__container'>
-        <NavBar />
-      </div>
       <div className='home__header__container'>
         <div className="text__container">
           <h1 className='home__header__title'>

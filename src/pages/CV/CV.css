@@ -21,11 +21,12 @@
 .cv__header__para {
     width: 50%;
     margin: 100px;
+    text-align: center;
 }
 
 .cv__features__container {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +34,15 @@
 
 .features__cards__container {
     width: 90%;
-    height: 900px;
+    height: 1000px;
     background-color: rgba(233, 251, 248, 1);
     border-radius: 40px;
     z-index: 1;
     margin-top: -70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #text__container {
@@ -46,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    padding-top: 100px;
+    padding-top: 40px;
     line-height: 1.5;
 }
 
@@ -59,4 +64,75 @@
 }
 
 .cards__container {
+    width: 845px;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: flex-end;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: -60px;
+}
+
+.card {
+    width: 255px;
+    height: 265px;
+    background: rgba(252, 252, 255, 1);
+    border-radius: 12px;
+}
+
+.card__element {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.icons__container>img {
+    width: auto;
+    height: auto;
+    max-width: 35px;
+    max-height: 35px;
+    margin-top: 20px;
+}
+
+#content__container {
+    padding: 10px 0px 40px 0px;
+}
+
+.header__container>h3.header__card {
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+.para__container>p.para {
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url('../../assests/img/banner.png');
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner>h1.banner__header {
+    padding: 150px 30px 30px 30px;
+}
+
+.banner>p.banner__para {
+    padding: 0px 30px 30px 30px;
+}
+
+.presence__container {
+    width: 100%;
+    height: 972px;
+    background: url('../../assests/img/Online\ Presence.png');
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; */
 }

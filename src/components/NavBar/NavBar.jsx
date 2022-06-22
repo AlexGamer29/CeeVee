@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink, Routes } from "react-router-dom";
 // import { Home } from "./Pages/Home";
 // import { About } from "./Pages/About";
 // import { Contact } from "./Pages/Contact.jsx";
 // import { Product } from "./Pages/Product";
 // import SignIn from "./Pages/SignIn.jsx";
+import Home from '../../pages/Home/Home'
 import './NavBar.css';
 import CeeVee from '../../assests/img/CeeVeebg.png'
+import CV from "../../pages/CV/CV";
 
 function NavBar() {
     const [click, setClick] = useState(false);
@@ -110,11 +112,13 @@ function NavBar() {
                         </div>
                     </div>
                 </nav>
-                {/* <Route exact path="/" />
-                <Route path="/about" />
-                <Route path="/product" />
-                <Route path="/contact" />
-                <Route path="/signin" /> */}
+                <Routes>
+                    <Route exact path="/" element={ <Home/>} />
+                    <Route path="/about" element={ <CV />} />
+                    <Route path="/product" />
+                    <Route path="/contact" />
+                    <Route path="/signin" />
+                </Routes>
             </Router>
         </div>
     );
