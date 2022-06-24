@@ -1,15 +1,15 @@
 import React from 'react'
-import { FormLogin } from '../../components/FormLogin/FormLogin'
+import { FormSignUp } from '../../components/FormSignUp/FormSignUp'
 import { FooterContainer } from '../../components/FooterContainer/FooterContainer';
-import './LogIn.css'
+import './SignUp.css'
 
-const LogIn = () => {
+const SignUp = () => {
   return (
     <>
       <div className="login__container">
         <div className="login__header">
           <div className="login__form">
-            <FormLogin/>
+            <FormSignUp />
           </div>
         </div>
       </div>
@@ -20,4 +20,4 @@ const LogIn = () => {
   )
 }
 
-export default LogIn
+export default SignUp
