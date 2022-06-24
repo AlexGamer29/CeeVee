@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import NavBar from '../../components/NavBar/NavBar'
 import './CV.css'
 import icon1 from '../../assests/img/card-icons-1.png'
 import { HiOutlineArrowRight } from "react-icons/hi";
