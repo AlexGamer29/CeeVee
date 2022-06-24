@@ -1,8 +1,6 @@
 import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
 import Header from '../../assests/img/header.png'
 import Button from '@mui/material/Button';
-import { styled } from '@mui/system';
 import './Home.css'
 import { FooterContainer } from '../../components/FooterContainer/FooterContainer';
 

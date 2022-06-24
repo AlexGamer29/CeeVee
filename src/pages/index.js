@@ -3,4 +3,5 @@ import CV from "./CV/CV";
 
 export {
     Home,
+    CV,
 }

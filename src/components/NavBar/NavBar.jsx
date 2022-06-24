@@ -6,9 +6,10 @@ import { BrowserRouter as Router, Switch, Route, NavLink, Routes } from "react-r
 // import { Product } from "./Pages/Product";
 // import SignIn from "./Pages/SignIn.jsx";
 import Home from '../../pages/Home/Home'
+import CV from "../../pages/CV/CV";
+import LogIn from "../../pages/LogIn/LogIn";
 import './NavBar.css';
 import CeeVee from '../../assests/img/CeeVeebg.png'
-import CV from "../../pages/CV/CV";
 
 function NavBar() {
     const [click, setClick] = useState(false);
@@ -43,23 +44,12 @@ function NavBar() {
                             <li className="nav-item">
                                 <NavLink
                                     exact
-                                    to="/about"
+                                    to="/cv-templates"
                                     activeClassName="active"
                                     className="nav-links"
                                     onClick={() => { handleClick(); setColor("60E1CB"); }}
                                 >
                                     CV Templates
-                                </NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink
-                                    exact
-                                    to="/product"
-                                    activeClassName="active"
-                                    className="nav-links"
-                                    onClick={() => { handleClick(); setColor("60E1CB"); }}
-                                >
-                                    Product
                                 </NavLink>
                             </li>
                             <li className="nav-item">
@@ -113,11 +103,12 @@ function NavBar() {
                     </div>
                 </nav>
                 <Routes>
-                    <Route exact path="/" element={ <Home/>} />
-                    <Route path="/about" element={ <CV />} />
-                    <Route path="/product" />
-                    <Route path="/contact" />
-                    <Route path="/signin" />
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/cv-templates" element={<CV />} />
+                    <Route path="/write-cv" />
+                    <Route path="/community" />
+                    <Route path="/log-in" element={<LogIn />} />
+                    <Route path="/register" />
                 </Routes>
             </Router>
         </div>
