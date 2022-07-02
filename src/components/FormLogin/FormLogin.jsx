@@ -1,22 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-// import { yupResolver } from '@hookform/resolvers/yup'
-import * as Yup from 'yup'
 import "./FormLogin.css";
-
-
-
-const schema = Yup.object().shape({
-    // fullname: Yup.string()
-    //     .required('Fullname is required')
-    //     .min(3, 'Fullname must be at least 3 characters')
-    //     .max(50, 'Fullname must be less than 50 characters'),
-    email: Yup.string()
-        .email('Invalid email')
-        .required('Email is required'),
-    password: Yup.string()
-        .required('Password is required'),
-})
 
 export const FormLogin = () => {
     const { register, handleSubmit, reset, formState: { errors, isSubmitSuccessful } } = useForm(
