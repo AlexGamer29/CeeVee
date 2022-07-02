@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, NavLink, Routes } from "react-router-dom";
+import { Route, NavLink, Routes } from "react-router-dom";
 import Home from '../../pages/Home/Home'
 import CV from "../../pages/CV/CV";
 import LogIn from "../../pages/LogIn/LogIn";
